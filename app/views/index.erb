@@ -11,7 +11,7 @@
   </form>
   <br>
   <form action="/user_info" method="POST">
-    <label>Full Name
+    <label>Name
     <input type="text" name="user[full_name]"><br>
     </label>
     Email <input type="text" name="user[email]"><br>
@@ -27,6 +27,22 @@
       <option>Velociraptor</option>
     </select>
   <input type="submit" value="submit choice">
+
+<!--     <input type="checkbox" name="option1" value="Cool" checked> Cool<br>
+    <input type="checkbox" name="option2" value="Uncool"> Uncool<br>
+    <input type="submit" value="submit post"> -->
+  </form>
+
+  <br>
+  <br> 
+  <form action="/madlibs" method="GET">
+    Make a Madlib!
+    <label>Noun01
+    <input type="text" name="words[noun01]"><br>
+    </label>
+    Verb01 <input type="text" name="words[verb01]"><br>
+    Adjective01<input type="text" name="words[adj01]"><br>
+  <input type="submit" value="submit words">
 
 <!--     <input type="checkbox" name="option1" value="Cool" checked> Cool<br>
     <input type="checkbox" name="option2" value="Uncool"> Uncool<br>

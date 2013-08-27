@@ -21,3 +21,11 @@ post '/user_info' do
   puts "[LOG] Params: #{params.inspect}"
   erb :post_user_info_url
 end
+
+
+get '/madlibs' do
+  puts "[LOG] Posting to /user_info"
+  puts "[LOG] Params: #{params.inspect}"
+  erb :madlibs
+end
+
