@@ -1,5 +1,33 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
+  <form action="/cool_url" method="GET">
+    <input type="text" name="post[title]">
+    <input type="text" name="post[price]">
+    <textarea name="post[description]"></textarea>
+    <input type="submit" value="submit choice">
+<!--     <textarea cols="40" rows="5" name="get_string" wrap=physical>
+      Enter Get Query
+    </textarea>
+    <input type="submit" value="submit get"> -->
+  </form>
+  <br>
+  <form action="/cool_url" method="POST">
+  <select name="option">
+    <option>T-Rex</option>
+    <option>Stegosaurus</option>
+    <option>Velociraptor</option>
+  </select>
+  <input type="submit" value="submit choice">
+
+<!--     <input type="checkbox" name="option1" value="Cool" checked> Cool<br>
+    <input type="checkbox" name="option2" value="Uncool"> Uncool<br>
+    <input type="submit" value="submit post"> -->
+  </form>
+</div>
+
+
+
+
+<!--   <h1>Welcome to Sinatra!</h1>
   <p>Hello, world!</p>
 
   <table>
@@ -19,5 +47,4 @@
       <td>The current controller</td>
       <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
     </tr>
-  </table>
-</div>
+  </table> -->
