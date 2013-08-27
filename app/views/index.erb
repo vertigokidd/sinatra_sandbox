@@ -10,12 +10,22 @@
     <input type="submit" value="submit get"> -->
   </form>
   <br>
-  <form action="/cool_url" method="POST">
-  <select name="option">
-    <option>T-Rex</option>
-    <option>Stegosaurus</option>
-    <option>Velociraptor</option>
-  </select>
+  <form action="/user_info" method="POST">
+    <label>Full Name
+    <input type="text" name="user[full_name]"><br>
+    </label>
+    Email <input type="text" name="user[email]"><br>
+    Street Address<input type="text" name="user[st_addr]"><br>
+    City <input type="text" name="user[city]"><br>
+    State <input type="text" name="user[state]"><br>
+    Zip Code <input type="text" name="user[zip]"><br>
+    Age <input type="text" name="user[age]"><br>
+    Favorite Dinosaur
+    <select name="user[dino]">
+      <option>T-Rex</option>
+      <option>Stegosaurus</option>
+      <option>Velociraptor</option>
+    </select>
   <input type="submit" value="submit choice">
 
 <!--     <input type="checkbox" name="option1" value="Cool" checked> Cool<br>

@@ -15,3 +15,9 @@ post '/cool_url' do
   puts "[LOG] Params: #{params.inspect}"
   erb :post_cool_url
 end
+
+post '/user_info' do
+  puts "[LOG] Posting to /user_info"
+  puts "[LOG] Params: #{params.inspect}"
+  erb :post_user_info_url
+end
